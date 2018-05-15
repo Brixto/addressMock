@@ -22,6 +22,10 @@ app.post('/address', function (req, res) {
     res.json(req.body);
 });
 
+app.get('/address', function(req, res) {
+    res.send('<a href="https://github.com/Brixto/addressMock/">API Documentation</a>');
+});
+
 function count(str) {
     let count = 0;
     for (var i = 0; i < str.length; i++) {
